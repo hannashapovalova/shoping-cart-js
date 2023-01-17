@@ -29,6 +29,7 @@ i {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 30px;
+    align-items:center;
 }
 .cart {
     background-color: var(--light-color);
@@ -146,16 +147,6 @@ i {
 .remove-button {
     background-color: var(--red-color);
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
