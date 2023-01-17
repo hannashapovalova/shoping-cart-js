@@ -11,7 +11,9 @@
 body {
     font-family: sans-serif;
     background-color: var(--light-color);
-    
+}
+i {
+    cursor: pointer;
 }
 .navbar {
     background-color: var(--dark-color);
@@ -108,4 +110,4 @@ footer {
     .shop {
     grid-template-columns: repeat(1, 223px);
     }
-}
+} 
