@@ -102,14 +102,22 @@ let calculation = () => {
     console.log(search.item);
     document.getElementById(id).innerHTML = search.item;
     calculation();
+    totalAmount();
   };
 
   let removeItem = (id) => {
     let selectedItem = id;
     basket = basket.filter((x) => x.id !== selectedItem.id);
     generateCartItems();
+    totalAmount();
     localStorage.setItem("data", JSON.stringify(basket));
   };
+
+  let clearCart = () => {
+    basket = [];
+    generateCartItems();
+    localStorage.setItem("data", JSON.stringify(basket));
+  }
    
 let totalAmount = () => {
   if(basket.length !== 0) {
@@ -125,7 +133,7 @@ let totalAmount = () => {
      <button class="checkout-button">
       Checkout
      </button>
-     <button class="remove-button">
+     <button onclick="clearCart()" class="remove-button">
       Remove All
      </button>
     `);
