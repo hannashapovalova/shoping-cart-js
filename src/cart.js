@@ -122,8 +122,12 @@ let totalAmount = () => {
      <h2>
      Total Bill: $ ${amount}
      </h2>
-     <button>Checkout</button>
-     <button>Remove All</button>
+     <button class="checkout-button">
+      Checkout
+     </button>
+     <button class="remove-button">
+      Remove All
+     </button>
     `);
   } else return;
 };

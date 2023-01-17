@@ -91,7 +91,7 @@ i {
     margin-bottom: 20px;
     color: var(--dark-color);
 }
-.homeBtn {
+.homeBtn, .remove-button, .checkout-button {
     background-color: var(--dark-color);
     color: var(--light-color);
     border: none;
@@ -139,6 +139,12 @@ i {
     font-size:20px;
     color: var(--dark-color);
     margin-top: 10px;
+}
+.checkout-button {
+    background-color: green;
+}
+.remove-button {
+    background-color: var(--red-color);
 }
 
 
