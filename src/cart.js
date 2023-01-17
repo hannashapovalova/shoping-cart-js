@@ -29,7 +29,7 @@ let calculation = () => {
                   $${price}
                   </p>
                 </h4>
-                <i class="bi bi-x-lg"></i>
+                <i onclick="removeItem(${id})" class="bi bi-x-lg"></i>
               </div>
 
               <div class="buttons">
@@ -104,4 +104,10 @@ let calculation = () => {
     calculation();
   };
 
+  let removeItem = (id) => {
+    let selectedItem = id;
+    basket = basket.filter((x) => x.id !== selectedItem.id);
+    generateCartItems();
+    localStorage.setItem("data", JSON.stringify(basket));
+  };
    
