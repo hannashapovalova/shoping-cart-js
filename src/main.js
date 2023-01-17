@@ -1,36 +1,5 @@
 let shop = document.getElementById("shop");
 
-let shopItemsData = [
-    {
-      id: "jfhgbvnscs",
-      name: "Casual Shirt",
-      price: 45,
-      desc: "Lorem ipsum dolor sit amet adipisicing.",
-      img1: "images/img-1-1.jpg",
-    },
-    {
-      id: "ioytrhndcv",
-      name: "Office Shirt",
-      price: 100,
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
-      img1: "images/img-2-1.jpg",
-    },
-    {
-      id: "wuefbncxbsn",
-      name: "T Shirt",
-      price: 25,
-      desc: "Lorem ipsum sit amet consectetur adipisicing.",
-      img1: "images/img-3-1.jpg",
-    },
-    {
-      id: "thyfhcbcv",
-      name: "Mens Suit",
-      price: 300,
-      desc: "Lorem ipsum dolor amet consectetur adipisicing.",
-      img1: "images/img-4-1.jpg",
-    }];
-
-
 
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
@@ -40,7 +9,7 @@ let generateShop = () => {
       let search = basket.find((x)=> x.id === id) || [];
         return ` 
         <div id=produst-id=${id} class="item">
-          <img src=${img1} class="d-block w-100" alt="Shirt" width="220">
+          <img src=${img1} class="d-block w-100" alt=${name} width="220">
           <div class="details">
             <h3>
               ${name}
