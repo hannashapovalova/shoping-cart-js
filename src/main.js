@@ -4,12 +4,12 @@ let shop = document.getElementById("shop");
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
 let generateShop = () => {
-    return (shop.innerHTML = shopItemsData.map((x)=>{
+    return (shop.innerHTML = shopItemsData.map((x) => {
       let { id, name, price, desc, img1} = x;
-      let search = basket.find((x)=> x.id === id) || [];
+      let search = basket.find((y) => y.id === id) || [];
         return ` 
-        <div id=produst-id=${id} class="item">
-          <img src=${img1} class="d-block w-100" alt=${name} width="220">
+        <div id=product-id-${id} class="item">
+          <img src=${img1} alt=${name} width="220">
           <div class="details">
             <h3>
               ${name}
@@ -32,8 +32,8 @@ let generateShop = () => {
           </div>
         </div>
         `;
-    }));
-    ;
+    })
+    .join(""));
 };
 
 generateShop();
