@@ -20,6 +20,9 @@ a {
 i {
     cursor: pointer;
 }
+footer {
+    background-color: #4a4e69;
+}
 
 .navbar {
     background-color: var(--dark-color);
@@ -154,12 +157,6 @@ i {
 
 
 
-footer {
-    background-color: #4a4e69;
-    color: #f2e9e4;
-    margin-top: 650px;
-    padding: 60px;
-}
 
 @media (max-width: 1000px) {
     .shop {
