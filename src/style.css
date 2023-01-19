@@ -110,6 +110,7 @@ footer {
     margin-top: 70px;
     margin-bottom: 20px;
     color: var(--dark-color);
+    margin-top: 150px;
 }
 .homeBtn, .remove-button, .checkout-button {
     background-color: var(--dark-color);
