@@ -23,7 +23,7 @@ i {
 footer {
     background-color: #4a4e69;
 }
-
+/* Navbar */
 .navbar {
     background-color: var(--dark-color);
     color: var(--light-color);
@@ -31,13 +31,22 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 30px;
     align-items:center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.brandName {
+    font-weight: 800;
+}
+.brandName:hover {
+    color: var(--light-color);
+    transform: scale(1.2);
 }
 .cart {
     background-color: var(--light-color);
     color: var(--dark-color);
-    padding: 5px;
+    padding: 4px 12px;
     font-size: 30px;
     border-radius: 4px;
     position: relative;
@@ -49,11 +58,13 @@ footer {
     position: absolute;
     top: -10px;
     right: -10px;
-    padding: 5px 8px;
+    padding: 4px 12px;
     border-radius: 4px;
     font-size: 16px;
 }
+/* Shop */
 .shop {
+    margin-top: 150px;
     display: grid;
     grid-template-columns: repeat(4, 223px);
     gap: 30px;
@@ -62,6 +73,7 @@ footer {
 .item {
     border: 1px solid var(--dark-color);
     border-radius: 4px;
+    background-color: white;
 }
 .item img {
     width: 100%;
@@ -149,7 +161,7 @@ footer {
     margin-top: 10px;
 }
 .checkout-button {
-    background-color: green;
+    background-color: #2d6a4f;
 }
 .remove-button {
     background-color: var(--red-color);
